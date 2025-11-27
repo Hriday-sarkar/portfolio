@@ -15,9 +15,6 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", newTheme);
 });
 
-// =========================================
-// Smooth Glide Scroll for Navbar Links
-// =========================================
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", function (e) {
@@ -54,9 +51,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     requestAnimationFrame(animateScroll);
   });
 });
-// =========================================
-// Scroll Reveal Animation
-// =========================================
 
 const revealElements = document.querySelectorAll(".reveal");
 
