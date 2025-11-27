@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hriday-Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <style>
+      section[id] {
+        scroll-margin-top: 40px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Hriday<span class="accent">Dev</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+            <span class="icon"></span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <style>
+        .slide-up {
+          opacity: 0;
+          transform: translateY(40px);
+          animation: slideUp 0.8s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+
+      <div class="hero-content">
+        <h1 class="slide-up">Hello, I'm <span class="accent">Hriday</span></h1>
+
+        <p class="subtitle slide-up" style="animation-delay: 0.3s">
+          Java Developer • Web Developer • Problem Solver • Assembly Coder
+        </p>
+
+        <a href="#projects" class="btn slide-up" style="animation-delay: 0.6s">See My Work</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about reveal">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <img src="assets/port.jpg" alt="Hriday" class="profile-pic" />
+        <p>
+          I'm a developer with a deep curiosity for how things work, from
+          high-level web applications to low-level assembly code. My passion
+          lies in bridging the gap between elegant design and efficient
+          functionality. Whether I'm crafting interactive web experiences or
+          diving into the intricacies of microprocessors, I'm driven by a desire
+          to build robust and thoughtful solutions. I believe in a hands-on
+          approach: learn consistently, build practically, and refine
+          relentlessly.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <a
+          href="https://github.com/Hriday-sarkar/Pixel-marketplace"
+          class="project-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="card">
+            <img src="assets/pixell.png" alt="Isometric Car Racing Game" />
+            <h3>Pixel Advertise Space</h3>
+            <p>Web Page transforms ad pixels into tradable digital property.</p>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="project-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="card">
+            <img src="assets/this.png" alt="Portfolio Template" />
+            <h3>Portfolio Template (This One!)</h3>
+            <p>
+              A fully customizable developer portfolio template built with clean
+              design principles.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <h2>Get in Touch</h2>
+      <p>Let’s collaborate or chat about your next project.</p>
+      <div class="socials">
+        <a
+          href="https://github.com/Hriday-sarkar"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/hriday-connect/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a href="mailto:connecthridaysarkar@gmail.com">Email</a>
+      </div>
+      <div class="contact-box">+91 93664 08325</div>
+    </section>
+
+    <footer>© 2025 Hriday. Designed with ❤️.</footer>
+  </body>
+</html>
